@@ -4,7 +4,9 @@ services:
   app-csv:
     build:
       #Construye un servicio
-        context: .
-          #Desde el contexto donde estás ubicado
-        dockerfile: Dockerfile
-          #Y encuentra este archivo
+      context: .
+        #Desde el contexto donde estás ubicado
+      dockerfile: Dockerfile
+        #Y encuentra este archivo
+    volumes:
+      - .:/app
